@@ -1,0 +1,82 @@
+<!DOCTYPE html><head>
+<title>database validation</title></head>
+<body>
+<form onsubmit = "return checkForm(this);">
+<p><input type = "text" name = "dob"></p></br>
+<p><input type = "text" name = "starttime"></p></br>
+<!-- differnt browser has a differnt date and time picker-->
+<input type = "submit">
+</form>
+<script>
+// program has a no error but result is not show properly like whatever i put in form they submitted the form without any objection.
+
+  function checkdate(strdate,form) 
+  {
+   // regular expression to match the required date format
+   
+    re = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+	
+	if (strdate != '') {
+	   regs = strdate;
+	   //01234567
+	   //12/13/70(display month date and year)
+	   // store the fulldate
+	  m_regs = regs.substring(0, 2);
+	  // store the month
+	  d_regs = regs.substring(3, 5);
+	  // now store the year
+	  y_regs = regs.substring(6);//
+	  
+	       		  
+	  //day value is between 1 and 31
+	  
+	  if(d_regs < 1 || d_regs > 31) 
+	  {
+	    alert("Invalid vaue of day: " + d_regs);
+	    form.dob.focus();
+		return false;
+	  }
+	  // check the value of the month
+	  
+	  if(m_regs < 1 || m_regs > 12) 
+	  {
+	    alert("Invalid vaue of monnth: " + m_regs);
+	    form.dob.focus();
+		return false;
+	  }
+	  // check the value of the year
+	  
+	  if(y_regs > 20) 
+	  {
+	    alert("Invalid vaue of year: " + y_regs);
+	    form.dob.focus();
+		return false;
+	  }
+    
+	}
+	  
+
+//regular expression to match the required format
+
+  re = /^\d{1,2}:\d{2}([ap]m)?$/;
+    if (form.starttime.value!="" && !form.starttime.value.match(re))
+	{
+        alert("Invalid time format: "  + form.starttime.value);
+        form.starttime.focus();
+        return false;
+    
+	
+  alert("all is valid");
+  return true;
+  
+}
+}
+
+  function checkForm(form) 
+  {
+    return checkdate(form.dob.value.toString(),from);
+      return true;
+  }
+</script>
+</body>
+</html>

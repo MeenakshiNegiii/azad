@@ -1,0 +1,86 @@
+Q: This server currently sends the same response for ‘/whatis/apple’, ‘/whatis/orange’, and ‘/whatis/banana’. Write a function to send the same response, and DRY the code by using that function as a callback for all three routes.
+
+answer:
+const sendFruitResponse = (req, res, next) => {
+  res.send('fruit');
+}
+ 
+app.get('/whatis/apple', sendFruitResponse);
+ 
+app.get('/whatis/orange', sendFruitResponse);
+ 
+app.get('/whatis/banana', sendFruitResponse);
+
+
+Q: The current moodleware middleware function should attach a mood property to the request object on every request and then continue on with the rest of the route matching. Something is missing! Fix it so that it moves on after attaching the req.mood.
+
+answer:
+const moodleware = (req, res, next) => {
+  const randomMoodIndex = Math.floor(Math.random() * moods.length);
+  req.mood = moods[randomMoodIndex];
+  next();
+}
+
+Q:
+Complete the timeMiddleware function to DRY the current application by attaching the currentTime to the request body as date. Use this in all routes and eliminate the duplicate code.
+
+
+answer:
+
+const timeMiddleware = (req, res, next) => {  
+  req.date = Date.now();
+  next();
+};
+
+
+Q: Complete the errorHandler function as an Express error handling function. It should set the response status equal to the error object’s status property if it exists, and 500 by default if there is no status on the error object. It should send the message property of the error object as its response.
+
+answer:
+const errorHandler = (err, req, res, next) => {
+  if (!err.status) {
+    err.status = 500;
+  }
+  res.status(err.status).send(err.message);
+}
+
+
+Q: Import the morgan logging middleware to log all requests. Use the predefined format ‘short’ instead of ‘tiny’.
+
+answer:
+const morgan = require('morgan');
+app.use(morgan('short'));
+
+Q: Use app.use and the indexExists middleware function for all /data/:index paths.
+
+answer:
+app.use('/data/:index', indexExists);
+
+
+Q: Use the Express middleware resources to find an appropriate middleware package to handle CORS requests.
+
+Import the correct middleware package and use it for all requests. You can use the default settings for this middleware, no need to use any customization!
+
+
+answer:
+const cors = require('cors');
+ 
+app.use(cors());
+
+
+Q: Use Router.param to DRY this appleRouter. Attach the apple variety to the request body if it exists, send a 404 response if it does not. In each individual route, send the appropriate property from that apple object.
+
+
+
+answer:
+appleRouter.param('variety', (req, res, next, variety) => {
+  if (!apples[variety]) {
+    res.status(404).send();
+  } else {
+    req.variety = apples[variety];
+    next();
+  }
+});
+ 
+appleRouter.get('/:variety/description', (req, res, next) => {
+  res.send(req.variety.description);
+});

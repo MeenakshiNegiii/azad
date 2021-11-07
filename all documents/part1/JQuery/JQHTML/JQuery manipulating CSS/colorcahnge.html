@@ -1,0 +1,40 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery hide() and show() method</title>
+<script>
+$(document).ready(function() {
+
+	
+	$("button").click(function(){
+  $("h1, p, h2,div").addClass("red");
+  $("#d1").addClass("important");
+	});
+}); 
+  </script>
+  <style>
+  // here the color blue is not work 
+  .important { font-weight:bold; font-size:3em; color:blue;}
+  
+  .red { color:green;}
+  </style>
+</head>
+<body>
+
+<h1> This is a h1 heading</h1>
+<p>This is a another paragraph</p>
+<h2>this is important text of me becoz this is h2 heading</h2>
+<div>now see what happen when happen if i click in button</div><br>
+<div id = "d1">now see what happen when happen if i click in button</div>
+
+</div>
+<br>
+<br>
+
+<button>now change the TEXT and FONT-SIZE</button>
+
+
+
+</body>
+</html>

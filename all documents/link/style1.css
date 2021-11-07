@@ -1,0 +1,53 @@
+body
+{
+background-color:pink;
+width:70%;}
+main{
+margin:10px;
+padding:10px;
+border: 2px thin black;
+border-radius: 5px;}
+h1, h2, h3, li{
+color:white;
+text-transform:capitalize;
+font-family: 'times new roman';
+}
+img{
+width:300px;
+height:400px;
+border:2px solid white;}
+nav ul,a
+{
+color:white; font-size:1.5em; font-weight: bold;
+text-decoration:none;
+text-transform:uppercase;
+}
+
+a:hover
+{ color:yellow;
+}
+a:visited
+{ color:green;
+}
+a:active
+{ color:blue;}
+p 
+{
+font: 1.5em bold 'times new roman';
+color:white;
+}
+table
+{
+border:1px solid white;
+}
+div
+{
+border: 1px solid white;
+padding:11px;
+border-radius: 15px;
+margin:10px;}
+
+footer a
+{
+color:black;}
+

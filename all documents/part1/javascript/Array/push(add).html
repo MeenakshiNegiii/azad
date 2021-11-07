@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<title>Now Array starts!</title>
+</head>
+<body>
+<h1>Array elements lengths property</h1>
+//this is show lengths//
+<p id ="demo"></p>
+// this is for full array show//
+<p id ="last"></p>
+// this is for alphabetically//
+
+<p id ="demo1"></p> 
+// this is show remove last element from the array
+<p id ="lost"></p> 
+// this is show array present with commas ,//
+<p id ="demo2"></p>
+// this is show delete element//
+<p id ="semo"></p>
+<script>
+var cars = ["valvo", "saab", "BMW"];
+
+document.getElementById("demo").innerHTML= cars.push("Fiat");
+document.getElementById("last").innerHTML= cars;
+document.getElementById("demo1").innerHTML= cars.sort();
+document.getElementById("lost").innerHTML= cars.pop();
+document.getElementById("demo2").innerHTML= cars.toString();
+document.getElementById("semo").innerHTML= "THE cars is " + delete cars[3];
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UPPERCASE the STRING </title>
+</head>
+<body>
+<h1> javascript STRING </h1>
+
+
+<p id = "demo"> IN THIS PROGRAM WE USED how to replace a string </p><button onclick="findstr()">please try</button>
+<script>
+function findstr() {
+var fullname = "andrew smith";// here we can change name and add also
+var spacepos = fullname.indexOf(" ");//spacepos is space position
+var firstname = fullname.slice(0,spacepos)// 0 means no alphabet missing 
+var lastname = fullname.slice(spacepos+2)// 2 represent that position after space
+document.getElementById("demo").innerHTML = "firstname is " + firstname  +  " lastname is " + lastname;
+}
+</script>
+</body>
+</html>

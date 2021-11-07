@@ -1,0 +1,39 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery hide() and show() method</title>
+<script>
+$(document).ready(function() {
+  $("#b1").click(function(){
+ $("#p1").prepend("<i> just prepend text</i>")
+	       	});
+			
+		$("#b2").click(function(){
+		$("ol").prepend("<li> prepand item</li>")
+	 
+		});
+		});
+  </script>
+</head>
+<body>
+<h1>this is JSQUERY Method </h1>
+
+
+<p id = "p1">  this is a parahgraph</p>
+now you can see another phase of jquery!
+<ol>
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+<li>fourth item</li>
+
+</ol>
+
+<button id = "b1">PREPeND TEXT </button>
+<button id = "b2">prepend item list </button>
+
+
+
+</body>
+</html>

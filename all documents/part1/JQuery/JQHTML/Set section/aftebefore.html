@@ -1,0 +1,34 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery hide() and show() method</title>
+<script>
+$(document).ready(function(){
+ $("#b1").click(function(){
+   $("img").before("<b>before</b> is comes picture");
+   });
+   
+   $("#b2").click(function(){
+   $("img").after("after");
+   });
+
+});
+		</script>
+</head>
+<body>
+<h1>this is JSQUERY Method </h1>
+
+
+<p>  this is a parahgraph</p>
+now you can see another phase of jquery!
+</br>
+
+<img src="C:\Users\AZAD\Desktop\ak\firstpic.jpg" alt="JQUERY" width = "20%" height = "30%">
+<button id="b1">before</button>
+<button id="b2">after</button>
+
+
+
+</body>
+</html>

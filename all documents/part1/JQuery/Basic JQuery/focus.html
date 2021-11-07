@@ -1,0 +1,32 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery injavascript</title>
+<script>
+$(document).ready(function() {
+  $("input").focus(function(){
+   $(this).css("background-color", "green");
+});
+  $("input").blur(function(){
+   $(this).css("background-color", "yellow");
+});
+ });
+</script>
+</head>
+<body>
+<h1>this is heading </h1>
+<br>
+<label>Enter your Firstname please: &nbsp; &nbsp; &nbsp;</label>
+<input type="text" name="Firstname" placeholder="Firstname"><br>
+<label>Enter your Lastname please: &nbsp; &nbsp; &nbsp;</label>
+<input type="text" name="lastname" placeholder="lastname"><br>
+<labe>Enter your Date of birth please:</label>
+<input type="dob" name="date of birth" placeholder="DD/MM/YYYY"><br>
+<label>Enter your Email_id please: &nbsp; &nbsp; &nbsp; </label>
+<input type="text" name="Email_id" placeholder="Email_id">
+
+
+
+</body>
+</html>

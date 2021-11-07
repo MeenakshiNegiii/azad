@@ -1,0 +1,51 @@
+<!DOCTYPE html><head>
+<title>database validation</title></head>
+<body>
+<form onsubmit = "return checkForm(this);">
+<p><input type = "text" name = "dob"></p></br>
+<p><input type = "text" name = "starttime"></p></br>
+<!-- differnt browser has a differnt date and time picker-->
+<input type = "submit">
+</form>
+<script>
+  function checkForm(form) {
+   // regular expression to match the reqired date format
+   
+    re = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+	
+	if (form.dob.value != '') {
+	   //regs = form.dob.value; 
+	   regs = form.dob.value.toString();
+	  // alert(regs);
+	   alert(regs);
+    	if(regs = form.dob.value.match(re)){
+	  
+	  //day value is between 1 and 31
+	  
+	  if(regs[1] < 1 || regs[1] > 31) {
+	    alert("Invalid vaue of day: " + regs[1]);
+	    form.dob.focus();
+		return false;
+	  }
+	  }
+	  }
+     
+  
+//regular expression to match the required format
+
+  re = /^\d{1,2}:\d{2}([ap]m)?$/;
+    if (form.starttime.value!="" && !form.starttime.value.match(re))
+	{
+     alert("Invalid time format: "  + form.starttime.value);
+      form.starttime.focus();
+      return false;
+    }
+	
+  alert("all is valid");
+  return true;
+  
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<style>
+ #div2 {
+ width:100px;
+ height:100px;
+background-color:red;
+border: solid 1px red;
+border-radius: 5px;
+position:relative;
+
+}
+
+
+</style>
+
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery hide() and show() method</title>
+<script>
+$(document).ready(function() {
+  $("button").click(function(){
+    $("#div2").animate({
+	left:'250px',
+	opacity:'0.8',
+	height:'200px',
+		width:'250px'
+	});
+	});
+}); 
+  </script>
+</head>
+<body>
+<h1>this is hide and show method </h1>
+<div id ="div2"></div>
+
+</br>
+
+<button>animation start</button>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+hi friends, 
+
+today i am try AJAX with in a JQuery so here i am try i can do or not to upload a externl file to AJAX.

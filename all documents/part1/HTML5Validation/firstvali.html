@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my first validation page</title>
+<style>
+input:required:valid 
+{
+background-image:url("../HTML5Validation/heart1.png");
+background-repeat:no-repeat;
+background-position:right;
+color:white;
+background-color:red;
+font-size:2em;
+}
+input:required:invalid,input:focus:invalid
+{
+background-image:url("../HTML5Validation/heat1.png");
+background-repeat:no-repeat;
+background-position:right;
+color:red;
+background-color:orange;
+font-size:2em;}
+</style>
+</head>
+<body>
+<p> This is a very simple page of validation</p>
+<h1>Registration</h1>
+<form>
+<label>Enter your Firstname:</label>
+<input type= "text" name = "fname" required placeholder = "Firstname"></br></br>
+<label>Enter your Lasttname:</label>
+<input type= "text" name = "lname" required placeholder = "Lastname"></br></br>
+<label>Enter your Email:</label>
+<input type= "email" name = "email" required placeholder = "Email address please"></br></br>
+<label>Enter your Age:</label>
+<input type= "number" name = "age" size = "5" min = "18" max = "65" required placeholder = "Age"></br></br>
+<label>satisfaction:</label></br></br>
+<input type = "range" size = "2" name = "satisfaction" min = "1" max = "5" value = "3"></br></br>
+<input type = "submit" name = "sumit">
+
+
+
+
+</form>
+</body>
+</html>

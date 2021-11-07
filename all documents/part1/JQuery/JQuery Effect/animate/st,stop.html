@@ -1,0 +1,49 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<style>
+ #start, #stop {
+ 
+ padding:5px;
+ margin-left:10px;
+ text-align:center;
+background-color:red;
+border: solid 1px white;
+
+position:relative;
+
+}
+#stop{
+display:none;
+padding:50px;
+}
+
+</style>
+
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery hide() and show() method</title>
+<script>
+$(document).ready(function() {
+  $("#start").click(function(){
+    $("#stop").slideDown(2000);
+	});
+	 $("button").click(function(){
+	 $("#stop").stop();
+
+	});
+	
+}); 
+  </script>
+</head>
+<body>
+<h1>this is hide and show method </h1>
+<button>slidling stop</button>
+<div id ="start">start sliding</div>
+<div id ="stop">HELLO friends!</div>
+
+</br>
+
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery hide() and show() method</title>
+<script>
+function appendText()
+{
+var txt1 = "<p>Text.</p>"; //Create text with html
+var txt2 = $("<p></p>").text("Text."); // create text with a query
+var txt3= document.createElement("p");
+txt3.innerHTML= "Text";// create text with DOM
+
+ $("body").append(txt1, txt2, txt3);//append new element
+	       	}
+		</script>
+</head>
+<body>
+<h1>this is JSQUERY Method </h1>
+
+
+<p>  this is a parahgraph</p>
+now you can see another phase of jquery!
+<ol>
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+<li>fourth item</li>
+
+</ol>
+
+<button onclick= "appendText()">appendtext</button>
+
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<title>my objects</title>
+</head>
+<body>
+<h2> javascript objects</h2>
+<p id ='demo'>how can we do multiple actions</p>
+<p id = 'semo'>another line</p>
+<script>
+function person(first, last, age, eyecolor)
+{
+this.firstname= first;
+this.lastname=last;
+this.age=age;
+this.eyecolor=eyecolor;
+}
+var myFather = new person('john', 'doe', 40, 'brown'); 
+var myMother = new
+person('sally', 'doe', 36, 'brown');
+document.getElementById('demo').innerHTML='my father is ' + ' ' +myFather.firstname + ' ' + myFather.lastname + ' ' + 'now' + ' '+  myFather.age;
+document.getElementById('semo').innerHTML='my mother name is ' + ' ' + myMother.firstname + ' ' + myMother.lastname + ' ' + 'now' + ' ' + myMother.age;
+
+</script>
+</body>
+</html>

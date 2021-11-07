@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head><title>IF condition </title>
+</head>
+<body>
+<p id = "demo"> if condition starts now .In if condition 1st condition is true hui otherwise then used else statement for false result</p>.
+<button onclick = "myFunction()">try this</button>
+<script>
+function myFunction()
+{
+var msg;
+var hour = new Date.getHours();
+if (hour > 10)
+{
+ msg = "hi"; 
+}
+else if (hour > 22)
+{
+ msg = "bye"; 
+ }
+else {
+msg = "CU";
+}
+document.ElementById("demo").innerHTML= msg;
+}
+   </script>
+</body>
+</html>

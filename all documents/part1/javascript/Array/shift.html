@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<title>Now Array starts!</title>
+</head>
+<body>
+<h1>Array elements show shift and unshift() property</h1>
+//this is show how we can first element from the array//<br><br>
+<button onclick="myFunction()">shift();</button>
+<p id ="demo"></p>
+//this is show how we can add element in zero position usinf unshift() method//<br><br>
+<button onclick="myFunction1()">unshift();</button>
+<p id ="demo1"></p>
+<script>
+function myFunction() {
+var x = ["ram", "seeta","lakhan","geeta","Shayam"];
+document.getElementById("demo").innerHTML = x.shift();
+}
+/* create another object*/
+var y = ["ram", "seeta","lakhan","geeta","Shayam"];
+document.getElementById("demo1").innerHTML = y;
+
+function myFunction1() {
+ y.unshift("Ghanshyaam");
+document.getElementById("demo1").innerHTML = y;
+}
+
+</script>
+</body>
+</html>

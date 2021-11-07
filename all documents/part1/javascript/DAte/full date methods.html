@@ -1,0 +1,49 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<title>Creating a DAte method javascript</title>
+</head>
+<body>
+ <h3>In this program we can used  a lot of methods of dates.</h3>
+ <ul>
+ <h2><li>getDate()method</h2></li>
+ <h2><li>getHours()method</h2></li>
+<h2><li>getMinutes()method</h2></li>
+ <h2><li>getSeconds()method</h2></li>
+ <h2><li>getMiliseconds()method</h2></li>
+ <h2><li>getDay()method</h2></li>
+ <h2><li>getDay name method</h2></li>
+ </ul>
+ <p id = "demo"></p>
+ <p id = "demo1"></p>
+ <p id = "demo2"></p>
+ <p id = "demo3"></p>
+ <p id = "demo4"></p>
+ <p id = "demo5"></p>
+ <p id = "demo6"></p>
+<script> 
+
+var d = new Date();
+document.getElementById("demo").innerHTML = "today date is " + d.getDate();
+
+var d = new Date();
+document.getElementById("demo1").innerHTML = "Today current hour is 6 o\' clock : " + d.getHours();
+
+var d = new Date();
+document.getElementById("demo2").innerHTML = "and Minute is " + d.getMinutes();
+
+var d = new Date();
+document.getElementById("demo3").innerHTML = "and Seconds is " + d.getSeconds();
+
+var d = new Date();
+document.getElementById("demo4").innerHTML = "and MilliSeconds is " + d.getMilliseconds();
+
+var d = new Date();
+document.getElementById("demo5").innerHTML = "Today day is " + d.getDay();
+
+var d = new Date();
+var days = ["SUN","MON","TUES","WED", "THUR", "FRI","SAT"];
+document.getElementById("demo6").innerHTML = days[d.getDay()];
+</script>
+</body>
+</html>

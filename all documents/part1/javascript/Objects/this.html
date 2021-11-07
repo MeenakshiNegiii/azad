@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This keyword used in Object</title>
+</head>
+<body>
+<h1>This keyword used in javascript objects</h1>
+
+<p id = 'demo' >hi now objects starts.</p>
+<script>
+// create objects
+var person = {
+firstname:'kajal', 
+lastname:'Sharma',
+age:10, 
+eyecolor:'black',
+Fullname: function() {
+ return this.firstname + ' ' + this.lastname + ' and age is ' + this.age}
+ };
+// display some data from the object
+/* what is objects? so the answers is: objects is like a car, man(person)so car has a different properties and man different:
+// what is properties are : car property is like name , model color weight and properties and value is BMW , 100, white and weight is 2000gm, and the method is start, drive, mannual, brake , stop, similarly man properties is firstname, lastname color,nationality, eyecolor, religion, etc...*/ 
+document.getElementById('demo').innerHTML=
+person.Fullname();
+</script>
+</body>
+</html>
+
+
+

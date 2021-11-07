@@ -1,0 +1,38 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery hide() and show() method</title>
+<script>
+$(document).ready(function() {
+  	 $("#b1").click(function(){
+  $("#div").empty();
+	});
+	
+	$("#b2").click(function(){
+  $("#div").remove();
+	});
+	
+	
+	
+}); 
+  </script>
+</head>
+<body>
+<h1>this is hide and show method </h1>
+
+
+<div id = "div" style = "hegiht:300px;width:300px;border:1px solid black; background-color:red;color:white;font-sixe:1.6em;font-family:georgia;padding:10px;margin:10px;">
+<p this is some text which i write in a div container.</>
+<p>when you click the button 1 i will be dissaper</p>
+<p> now you click the button 2 th ewhole div container remove from your web page.<p>
+</div>
+<br>
+<br>
+<button id = "b1">now empty the text from div </button>
+<button id = "b2">now remove the div </button>
+
+
+
+</body>
+</html>

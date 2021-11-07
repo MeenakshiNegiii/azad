@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my first validation page</title>
+</head>
+<body>
+<p> This is a very second page of validation</p>
+<h1>Registration</h1>
+<form onsubmit = "return checkForm(this);">
+<label>Username:</label>
+<input type= "text" name = "username" placeholder = "Username"><br>
+<label>Password:</label>
+<input type= "password" name = "pwd1" placeholder = "password"/><br>
+<input type= "password" name = "pwd2" placeholder = "password"/><br>
+
+<input type = "submit">
+</form>
+<script
+>
+// program is not complety 
+function checkForm(form) 
+{
+  if ((form.username.value == ""))
+    {
+      alert("Error: Username can not be blank!");
+        form.username.focus();
+          return false;}
+    }
+  
+  re = /^\w+$/;
+  if (!re.test(form.username.value))
+  {
+  alert
+}
+</script>
+</body>
+</html>

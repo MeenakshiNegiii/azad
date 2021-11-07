@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>menu</title>
+<script>
+$(document).ready(function(){
+$(".d").click(function(){
+$(".d3").slideToggle("slow");
+});
+});
+
+$(document).ready(function(){
+$(".s").click(function(){
+$(".s3").slideToggle("slow");
+});
+});
+
+
+$(document).ready(function(){
+$(".m").click(function(){
+$(".m3").slideToggle("slow");
+});
+});
+
+$(document).ready(function(){
+$(".l").click(function(){
+$(".l3").slideToggle("slow");
+});
+});
+
+</script>
+<style>
+/* change the style on the extra small screen */
+@media screen and (max-width:300px) { display: block; float: none;}
+body {
+height:650px;
+background-color:green;
+background-image: linear-gradient(to right, red,orange);}
+
+#main{height:100%;}
+.box1
+ {float:left; margin:10px; height:100%; width:20%}
+
+.d3{padding:25px;display:none;} 
+.s3{padding:25px;display:none;}
+.m3{padding:25px;display:none;}
+.l3{padding:25px;display:none;}
+
+ol { font-family:vardana; font-size:1.5em; color:black;} 
+ol:hover { font-size:2.5em;}
+ul {list-style:lower-roman inside; listfont-family:vardana; font-size:1em; color:white;} 
+</style>
+</head>
+<body>
+<h1 style="text-align:center;text-decoration:underline;color:red;font-family:vardana;font-size:5em;"><span style="background-color:white;color:red;">MENU</h1>
+<div id="main">
+<div class="box1">
+<h3 style="text-decoration:underline;color:red;font-family:vardana;font-size:2em;margin-left:20px;" class="d"><span style="background-color:white;color:red;">DRINKS</h3></div>
+<div class="d3"><ol>
+<li>Water</li>
+<li>Mineral water</li>
+<li>Jal zeera</li>
+<li>Lassi</li><ul>
+<li> Yougurt Salty Lassi</li>
+<li>Yougurt Sweet Lassi</li>
+<li>Mango Lassi</li></ul>
+<li>Juice</li>
+<ul><li>mango</li><li>apple</li><li>beetroot</li><li>guvawa</li><li>strawbery</li><li>pineapple</li></ul>
+<li>Cocktail</li><li>water</li>
+<li>Mocktail</li></ol></div>
+
+<div class="box1">
+<h3 style="text-decoration:underline;color:red;font-family:vardana;font-size:2em;margin-left:10px;" class="s"><span style="background-color:white;color:red;">STARTERS</h3></div>
+<div class="s3"><ol>
+<li>Soups</li>
+<ul><li>Tamatoes soup</li><li>Mix vegi soup</li><li>Corn soup</li></ul>
+<li>Chaat puri</li>
+<li>Dahi vada</li>
+<li>Raj khachori</li>
+<li>Khamand dhokhla</li><li>Pakodas</li><ul><li>Mix pakodas</li><li>patatoes ,onion pakodas</li><li>Spinach pakodas</li></ul>
+<li>Fried Okra</li><li>water</li>
+<li>Fried patatoes chips</li><li>water</li>
+<li> Veggi manchuriyan</li></ol></div>
+
+
+<div class="box1">
+<h3 style="text-decoration:underline;color:red;font-family:vardana;font-size:2em;margin-left:30px;" class="m"><span style="background-color:white;color:red;">MAIN COURSE</h3></div>
+<div class="m3"><ol>
+<li>bhindi 2 piyaza</li>
+<li>palak paneer</li>
+<li>kadai paneer</li>
+<li>matar paneer</li><li>aaloo gobhi</li>
+<li>shahi panner</li><li>matar mushroom</li>
+<li>chole bhatura</li><li>dosa</li>
+<li>idly sambhar</li></ol></div>
+<div class="box1">
+<h3 style="text-decoration:underline;color:red;font-family:vardana;font-size:2em;margin-left:30px;" class="l"><span style="background-color:white;color:red;">DESSERT</h3></div>
+<div class="l3"><ol>
+<li> Carrot halwa</li>
+<li>kesari bhaat</li>
+<li>gulab jamun</li>
+<li>ras malai</li><li>ice cream </li><ul><li>vanila</li><li>Strawbery</li><li>chocklate</li></ul>
+<li>jalebi</li><li>imarti</li>
+<li>gevar</li><li>son papdi</li>
+<li>chenna</li></ol></div>
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>

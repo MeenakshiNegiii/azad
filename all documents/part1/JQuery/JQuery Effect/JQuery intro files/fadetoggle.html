@@ -1,0 +1,31 @@
+<!DOCTYEPE html>
+<html>
+<head>
+
+
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery hide() and show() method</title>
+<script>
+$(document).ready(function() 
+{
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+	$("#div2").fadeToggle("slow");
+	$("#div3").fadeToggle(4400);
+	
+	
+	});
+}); 
+  </script>
+</head>
+<body>
+<h1>this is hide and show method </h1>
+
+<div id ="div1" style ="width:80px; height:80px; background-color:red;">BOX1</div></br></br>
+<div id ="div2" style ="width:80px; height:80px;  background-color:green;">BOX2</div></br></br>
+<div id ="div3" style ="width:80px; height:80px; background-color:blue;">BOX3</div>
+</br></br>
+<button> fade show its power</button>
+
+</body>
+</html>

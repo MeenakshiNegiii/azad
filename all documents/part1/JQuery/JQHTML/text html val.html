@@ -1,0 +1,35 @@
+<!DOCTYEPE html>
+<html>
+<head>
+<script src= "https://code.jquery.com/jquery-3.5.1.js"></script>
+<title>JQery hide() and show() method</title>
+<script>
+$(document).ready(function() {
+  	 $("#b1").click(function(){
+      $("#p1").text("hello friends!");
+	   });
+	 
+      $("#b2").click(function(){
+       $("#p2").html("<b>BYE! Friends</b>");
+	   });
+	   
+	$("#b3").click(function(){
+       $("#t1").val(" MEGHA NEGI");
+}); 
+});
+  </script>
+</head>
+<body>
+<h1>this is hide and show method </h1>
+
+
+<p id = "p1">this is a parahgraph</p>
+<p id = "p2">this is another parahgraph</p>
+<p> <input type = "text" id = "t1" value = "Meenakshi Negi"></p>
+<button id = "b1">set TEXT </button>
+<button id = "b2">set HTML </button>
+<button id = "b3">set VAL </button>
+
+
+</body>
+</html>

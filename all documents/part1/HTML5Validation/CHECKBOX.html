@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my first checkbox validation page</title>
+
+</head>
+<body>
+<p> This is a page of validation</p>
+<h1>Term and Condition</h1>
+<form onsubmit="return checkForm(this);">
+<p><input type = "checkbox" name = "terms">
+I Accept the <b>all Term and Condition</b> of your company!</p>
+<input type = "submit">
+</form>
+<script>
+function checkForm(form) {
+    if (!form.terms.checked) {
+        alert("Error: you have to click this checkbox for continuee!");
+        form.terms.focus();
+          return false;}
+    alert("you accepter our term and condition!");
+	return true;
+	}
+	
+	
+
+</script>
+</body>
+</html>

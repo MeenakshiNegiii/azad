@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>News</title>
+<style>
+body {
+height:650px;
+background-color:green;
+background-image: linear-gradient(green, white);}
+
+h3,p {
+margin:45px; color:white; }
+
+#main { 
+width:800px;height:500px;}
+
+.box {
+margin:80px;
+padding:10px;
+height:200px;
+float:left;}
+
+h1 {
+text-align:center;text-decoration:underline;font-size:4em;color:white;}
+.b1 {
+background-color:green;
+color:white;border:none;padding:16px 32px;text-decoration:none;font-size:12px;margin:4px 2px; transition-duration:0.2s;cursor:pointer;}
+
+.b1 {display: inline-block;cursor:pointer;outline:none;
+background-color:white; color:black;border:none;border-radius:14px;padding:14px;box-shadow: 0 9px black;}
+
+.b1:hover {background-color:green;COLOR:white;}
+.b1:active { background-color:#3e8e41;box-shadow:0 5px green;transform:translateY(4px);}
+
+.b2 {
+display: inline-block;padding:14px 24px;cursor:pointer;outline:none;color:white;background-color:green;border:none;border-radius:14px;box-shadow: 0 9px black;}
+
+.b2:hover{ background-color:#3e8e41}
+.b2:active { background-color:#3e8e41;box-shadow:0 5px green;transform:translateY(4px);}
+</style>
+</head>
+<body>
+<h1>Contact Information</h1>
+<div id = "main">
+<h3>Contact</h3>
+<p><i>Fan? Drop a message!</i></p>
+<div class= "box">
+<img src="C:\Users\AZAD\Desktop\part1\web\download.png"style="width:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leeds,UK<br><br>
+<img src="C:\Users\AZAD\Desktop\part1\web\ph.jpg"style="width:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;phone:+00 1012023<br><br>
+<img src="C:\Users\AZAD\Desktop\part1\web\mail.png"style="width:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leeds@.com<br>
+</div>
+<div class="box">
+<form>
+<input type = "text" placeholder = "Name" required name = "name"><br><br><br>
+<input type = "text" placeholder = "Email" required name = "email"><br><br><br>
+<textarea rows ="4" cols="25" name="comment" placeholder = "Message" required></textarea><br><br><br>
+<button type="reset" value="reset"class="b1">RESET</button>
+
+<button class="b2">SEND</button>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my first checkbox validation page</title>
+<style>
+input[type="checkbox"]:required {
+display: none;
+}
+
+input[type="checkbox"]:required:invalid + label:before {
+     content: "\2610";
+     padding-right: 0.2em;
+     font-size: 1.6em;
+     color: red;
+}
+input[type="checkbox"]:required:invalid + label{color:red;}
+
+input[type="checkbox"]:required:valid + label:before{
+content: "\2611";
+padding-right: 0.2em;
+font-size: 1.6em;
+color: green;
+}
+input[type="checkbox"]:required:valid + label{color:green;}
+</style>
+</head>
+<body>
+<p> This is a page of validation</p>
+<h1>Term and Condition</h1>
+<form>
+<p>
+<input type = "checkbox" id ="terms" required name = "checkbox">
+<label for = "terms">I Accept the <b>all Term and Condition</b> of your company!</label></p>
+<input type = "submit">
+</form>
+</body>
+</html>
